@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="pt-br">
+    <head>
+        <title>Atualização de Pessoa Jurídica</title>
+        
+        <!-- Bloco de Meta -->
+	     <meta charset="utf-8"></meta>
+		 <meta name="viewport" content="width=device-width, user-scalable=no, 
+		 intial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		 <!-- Bloco de Meta -->
+		 
+		 <!-- Bloco de Link -->
+		 
+		 <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+		 <link rel="stylesheet" type="text/css" href="/css/styleCadPesFis.css">
+		 <!-- Bloco de Link -->
+		 
+		 <!-- Bloco de Script -->
+		 <script src="angular/angular.min.js"></script>
+		 <script src="angular/angular-locale_pt-br.js"></script>         
+                 <script src="bootstrap/js/jquery.min.js"></script>
+                 <script src="bootstrap/js/bootstrap.min.js"></script>
+                 
+        
+    </head>
+    <body>
+	     <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li><a href="cadPesJur.html">NOVO</a></li>
+      <li class="active"><a href="atualPesJur.html">EDITAR</a></li>
+      <li><a href="consPesJur.php">CONSULTAS</a></li>
+      <li><a href="delPesJur.html">EXCLUIR</a></li>
+    </ul>
+  </div>
+</nav>
+        <div class="container">
+            <div class="jumbotron">
+			<div class="text-center"><p><h3>ATUALIZAÇÃO DE PESSOA JURÍDICA</h3></p></div>
+			 <!-- Tabela -->
+			
+			<table class="table">
+			   <div class="container col-xs-3 col-sm-3 col-md-12 col-lg-12 text-center">
+                <form class="formulario" 
+                method="post" action="atualPesjur.php">
+				
+				<!-- Linha 1.0 -->
+				
+				<tr>
+				     <th>id</th><th></th><th></th>
+					
+				</tr>
+				
+				<!-- Linha 1.0 -->
+				
+				<!-- Linha 1.01 -->
+				
+                <tr>
+                
+                     <td>
+                  <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-filter"></i></span>					 
+                  <input class="form-control" type="number" name="id_tpj" disabled>
+				     </div>
+					 </td>
+					 <td>
+					 
+					 </td>
+					 <td>
+					 
+                  
+				     </td>
+					 
+				</tr>
+				
+				<!-- Linha 1.01 -->
+				
+				 <!-- Linha 1.1 -->
+				
+				<tr>
+				     <th>Razão Social</th><th>Nome Fantasia</th><th>Ramo</th>
+					
+				</tr>
+				
+				<!-- Linha 1.1 -->
+				
+				<!-- Linha 1.2 -->
+				
+                <tr>
+                
+                     <td>
+                  <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>					 
+                  <input class="form-control" type="text" name="razaoSoc_tpj">
+				     </div>
+					 </td>
+					 <td>
+					 <div class="input-group">
+                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                         <input class="form-control" type="text" name="nomeFant_tpj">
+				     </div>
+					 </td>
+					 <td>
+					 
+                  <div class="input-group">
+                         <span class="input-group-addon"><i class="glyphicon glyphicon-exclamation-sign"></i></span>
+                         <input class="form-control" type="text" name="ramo_tpj" id="campoData">
+				     </div>
+				     </td>
+					 
+				</tr>
+				
+				<!-- Linha 1.2 -->
+				
+				
+				<!-- Linha 1.3 -->
+				
+				<tr>
+				     <th>Endereço</th><th>Telefone Comercial</th><th>Site</th>
+					
+				</tr>
+				
+				<!-- Linha 1.3 -->
+				
+				<!-- Linha 1.4 -->
+				
+                <tr>
+                
+                     <td>
+                  <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>					 
+                  <input class="form-control" type="text" name="end_tpj">
+				     </div>
+					 </td>
+					 <td>
+					 <div class="input-group">
+                         <span class="input-group-addon"><i class="glyphicon glyphicon-phone-alt"></i></span>
+                         <input class="form-control" type="number" name="telCom_tpj">
+				     </div>
+					 </td>
+					 <td>
+					 
+                  <div class="input-group">
+                         <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+                         <input class="form-control" type="text" name="site_tpj">
+				     </div>
+				     </td>
+					 
+				</tr>
+				
+				<!-- Linha 1.4 -->
+				
+				<!-- Linha 1.5 -->
+				
+				<tr>
+				     <th>Email</th><th>Rede Social 1</th><th>Rede Social 2</th>
+					
+				</tr>
+				
+				<!-- Linha 1.5 -->
+				
+				<!-- Linha 1.6 -->
+				
+                <tr>
+                
+                     <td>
+                  <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>					 
+                  <input class="form-control" type="text" name="email_tpj">
+				     </div>
+					 </td>
+					 <td>
+					 <div class="input-group">
+                         <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+                         <input class="form-control" type="text" name="redeSocial1_tpj">
+				     </div>
+					 </td>
+					 <td>
+					 
+                  <div class="input-group">
+                         <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+                         <input class="form-control" type="text" name="redeSocial2_tpj">
+				     </div>
+				     </td>
+					 
+				</tr>
+				
+				<!-- Linha 1.6 -->
+				
+				<!-- Linha 1.7 -->
+				
+				<tr>
+				     <th>Obs</th><th>CNPJ</th><th>CEP</th>
+					
+				</tr>
+				
+				<!-- Linha 1.7 -->
+				
+				<!-- Linha 1.8 -->
+				
+                <tr>
+                
+                     <td>
+                  <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-exclamation-sign"></i></span>					 
+                  <input class="form-control" type="text" name="obs_tpj">
+				     </div>
+					 </td>
+					 <td>
+					 <div class="input-group">
+                         <span class="input-group-addon"><i class="glyphicon glyphicon-exclamation-sign"></i></span>
+                         <input class="form-control" type="number" name="cnpj_tpj">
+				     </div>
+					 </td>
+					 <td>
+					 
+                  <div class="input-group">
+                         <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                         <input class="form-control" type="number" name="cep_tpj">
+				     </div>
+				     </td>
+					 
+				</tr>
+				
+				<!-- Linha 1.8-->
+				
+				<!-- Linha 1.9 -->
+				
+				<tr>
+				     <th>Cidade</th><th></th><th></th>
+					
+				</tr>
+				
+				<!-- Linha 1.9 -->
+				
+				<!-- Linha 1.10 -->
+				
+                <tr>
+                
+                     <td>
+                     
+                     <div class="input-group"><span class="input-group-addon">
+				  <i class="glyphicon glyphicon-globe"></i></span>
+				         <select class="form-control" name="codCid_tpj">
+				             <option value="0">---</option>
+                             <option value="1">Rio Branco</option>
+                             <option value="2">Maceió</option>
+                             <option value="3">Macapá</option>
+                             <option value="4">Manaus</option>
+                             <option value="5">Salvador</option>
+                             <option value="6">Fortaleza</option>
+                             <option value="7">Brasília</option>
+                             <option value="8">Vitória</option>
+                             <option value="9">Goiânia</option>
+                             <option value="10">São Luiz</option>
+                             <option value="11">Cuiabá</option>
+                             <option value="12">Campo Grande</option>                             
+                             <option value="13">Belo Horizonte</option>
+                             <option value="14">Belém</option>
+                             <option value="15">João Pessoa</option>
+                             <option value="16">Curitiba</option>
+                             <option value="17">Recife</option>
+                             <option value="18">Terezina</option>
+                             <option value="19">Rio de Janeiro</option>
+                             <option value="20">Natal</option>
+                             <option value="21">Porto Alegre</option>
+                             <option value="22">Porto Velho</option>
+                             <option value="23">Boa Vista</option>
+                             <option value="24">Florianópolis</option>
+                             <option value="25">São Paulo</option>
+                             <option value="26">Aracajú</option>
+                             <option value="27">Palmas</option>
+                             <option value="28">Outros</option>
+                         </select>
+						 </div>
+                     
+                  
+					 </td>
+					 <td>
+					 
+					
+					 
+					 </td>
+					 <td>
+					 
+                  
+				     </td>
+					 
+				</tr>
+				
+				<!-- Linha 1.10-->				
+						
+				<!-- Linha 2 -->
+				
+                <tr>
+                     <td>				
+                         <input type="submit" class="form-control btn btn-success btn-block" 
+                         value="Atualizar">
+				  
+				    </td>
+				    <td>
+				         <input type="reset" class="btn btn-primary btn-block btn-danger"
+			             value="Limpar campos"> 
+				     </td>
+					 <td>
+				        
+					 </td>
+					
+			 </tr>
+                    
+                
+                <!-- Linha 2 -->
+				
+				
+				
+            </form>
+            
+            
+			     </div>
+			   </table>
+			   
+			    <!-- Tabela -->
+			   
+            </div>               
+        </div>
+       
+    
+    </body>
+</html>
